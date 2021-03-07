@@ -1,4 +1,7 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_application_1/screen/Pills_Reminder.dart';
+import 'package:flutter_application_1/screen/example_screen.dart';
+import 'package:flutter_application_1/screen/form_screen.dart';
 import 'package:flutter_application_1/screen/list_view_screen.dart';
 
 class HomeScreen extends StatefulWidget {
@@ -52,6 +55,39 @@ class _HomeScreenState extends State<HomeScreen> {
                   );
                 },
                 child: Text("Hit Here"),
+              ),
+              ElevatedButton(
+                onPressed: () {
+                  Navigator.push(
+                    context,
+                    MaterialPageRoute(
+                      builder: (context) => FormScreen(),
+                    ),
+                  );
+                },
+                child: Text("Hit Here"),
+              ),
+              ElevatedButton(
+                onPressed: () {
+                  Navigator.push(
+                    context,
+                    MaterialPageRoute(
+                      builder: (context) => PilleReminder(),
+                    ),
+                  );
+                },
+                child: Text("Hit icon"),
+              ),
+              ElevatedButton(
+                onPressed: () {
+                  Navigator.push(
+                    context,
+                    MaterialPageRoute(
+                      builder: (context) => ExampleScreen(),
+                    ),
+                  );
+                },
+                child: Text("Hit example"),
               ),
               TextButton(
                 onPressed: () {},
